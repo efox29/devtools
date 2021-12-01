@@ -2,6 +2,15 @@
 
 These are collections of tools that can help with development.
 
+## pycrc32.py
+
+Calculates the crc32 of a file. Most linux systems have built in crc32 check but this allows some level or portability across systems. 
+
+### Usage
+`python pycrc32.py filename`
+
+where `filename` is the file you want to calc the crc32 of.
+
 
 ## bitpos.py
 **Requires** Python3
