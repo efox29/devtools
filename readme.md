@@ -4,12 +4,42 @@ These are collections of tools that can help with development.
 
 ## pycrc32.py
 
-Calculates the crc32 of a file. Most linux systems have built in crc32 check but this allows some level or portability across systems. 
+Calculates the crc32 of a file or cli inputs. Most linux systems have built in crc32 check but this allows some level or portability across systems 
 
 ### Usage
-`python pycrc32.py filename`
+```
+python pycrc32.py -f FILENAME_PATH
+```
 
-where `filename` is the file you want to calc the crc32 of.
+where `FILENAME_PATH` is the file you want to calc the crc32 of.
+
+example: `python pycrc32.py -f ../firmware/myapp.bin`
+
+```
+python pycrc32.py -d DECIMAL_NUMBER
+```
+where `DECIMAL_NUMBER` is any decimal number
+
+example: `python pycrc32.py -d 12345678`
+
+```
+python pycrc32.py -s "STRING"
+```
+where `STRING` is any string.
+
+example: `python pycrc32.py -s "hello world!"`
+
+```
+python pycrc32.py -x HEX
+```
+where `HEX` is any hex starting with `0x`
+
+example: `python pycrc32.py -x 0xdeadbeef`
+
+### NOTE: The following non file arguments were tested with https://emn178.github.io/online-tools/crc32.html
+
+The file input was tested using unix crc32.
+
 
 
 ## bitpos.py
