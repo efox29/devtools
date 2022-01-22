@@ -19,6 +19,10 @@ def find_bits(number):
             row_data = row_data + f"{ bool(value & (1 << x)):<{gap}}"
         
         title = 'Bit Position'
+        print(f'decimal:{int(number)}')
+        print(f'Hex:{hex(number)}')
+        print(f'Binary:{bin(number)}')
+        print(f'')
         print(f"{title:^{len(header)}}")
         print(header)
         print(f"-"*len(header))
