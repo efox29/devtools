@@ -81,3 +81,15 @@ Output:
 1   0  0  1  0   0  0  1  1   0  1  0  0   
 ```
 
+
+## epoch.sh
+Converts linux epoch time to a date.
+
+### Usage
+`epoch.sh 1645002299`
+
+Output:
+```
+Wed Feb 16 04:04:59 EST 2022
+```
+
