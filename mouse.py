@@ -7,8 +7,14 @@ import datetime
 KILL_TIME = "17:01:00"
 
 
-print("Starting...")
+print("Starting Delay...")
+# Wait for 10 second to setup env
+time.sleep(5)
+print("5s remaining")
+time.sleep(5)
+print("Capturing pos...")
 prev_x, prev_y = pyautogui.position()
+print("Start!")
 while True:
     pyautogui.move(-1, 0)
 
