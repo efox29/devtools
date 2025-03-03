@@ -96,3 +96,33 @@ Wed Feb 16 04:04:59 EST 2022
 ## mouse.py
 Movies the mouse 1 pixel to the left and right and clicks. Keeps the computer from going idle.
 
+## create_emb_env.sh
+Create Embedded Environment
+
+Creates the folder structure for all embedded projects.
+
+Delete any folders you may not need (bsp, freertos etc..)
+
+```
+root
+ - src
+	 - app
+	 - middleware
+	 - hal
+	 - driver
+ - inc
+	 - repeat src folder
+ - thirdparty
+	 - freertos 
+	 - seggar
+ - tests
+ - docs
+ - build
+
+# if using stm32 code gen
+- stm32_cubemx
+	 - Core
+		 - autogen code
+	 - Drivers
+		 - autogen code
+```
