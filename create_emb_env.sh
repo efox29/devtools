@@ -11,7 +11,8 @@ mkdir -p thirdparty/freertos
 mkdir -p thirdparty/seggar
 
 mkdir tests
-mkdir docs
+mkdir -p docs/adr
+mkdir -p docs/pottery
 mkdir build
 
 mkdir -p stm32_cubemx/Core
